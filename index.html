@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+      .box_wrap {
+        width: 600px;
+        height: 300px;
+        border: 1px solid black;
+      }
+      .box_wrap > div {
+        background-color: darkcyan;
+        color: white;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        align-items: center; //Here (align-content) willn't be worked!
+      }
+
+      .box_width_auto {
+        margin-left: 50px;
+        height: 250px;
+        width: auto;
+      }
+      .box_width_100 {
+        margin-left: 50px;
+        height: 250px;
+        width: 100%;
+      }
+      .box_height_auto {
+        margin-top: 50px;
+
+        width: 400px;
+        height: auto;
+        /* padding: 50px; */
+      }
+      .box_height_100 {
+        margin-top: 50px;
+        width: 400px;
+        height: 100%;
+      }
+
+      .box_with_100_height_100{
+        margin: 10px;
+        height: 100%;
+        width: 100%;
+      }
+
+      .box_with_auto_height_auto{
+        margin: 10px;
+        /* padding: 50px; */
+        height: auto;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_wrap">
+      <div class="box_width_auto">CSS width: Auto</div>
+    </div>
+    <br />
+
+    <div class="box_wrap">
+      <div class="box_width_100">CSS width: 100%</div>
+    </div>
+
+    <br />
+    <div class="box_wrap">
+      <div class="box_height_auto">CSS height: Auto</div>
+    </div>
+
+    <br />
+    <div class="box_wrap">
+      <div class="box_height_100">CSS height: 100%</div>
+    </div>
+
+    <br><br><br><br>
+    <div class="box_wrap">
+        <div class="box_with_100_height_100">CSS height: 100% & CSS width: 100%</div>
+    </div>
+    <br><br><br><br>
+
+    <div class="box_wrap">
+        <div class="box_with_auto_height_auto">CSS height: Auto & CSS width: Auto</div>
+    </div>
+
+    <br><br><br><br>
+
+  </body>
+</html>
